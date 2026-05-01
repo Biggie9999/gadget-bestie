@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smartphone, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -14,9 +14,9 @@ const Footer = () => {
             </Link>
             <p style={{ marginTop: '16px' }}>Your premium plug for the best gadget accessories. We deliver nationwide.</p>
             <div style={{ display: 'flex', gap: '16px', marginTop: '24px' }}>
-              <a href="#" style={{ color: 'white' }}><Facebook size={20} /></a>
-              <a href="#" style={{ color: 'white' }}><Twitter size={20} /></a>
-              <a href="#" style={{ color: 'white' }}><Instagram size={20} /></a>
+              <a href="#" style={{ color: 'white', fontWeight: 'bold' }}>Facebook</a>
+              <a href="#" style={{ color: 'white', fontWeight: 'bold' }}>Twitter</a>
+              <a href="#" style={{ color: 'white', fontWeight: 'bold' }}>Instagram</a>
             </div>
           </div>
           
