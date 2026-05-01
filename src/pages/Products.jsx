@@ -21,7 +21,7 @@ const Products = () => {
         </p>
       </div>
 
-      <div style={{ display: 'flex', gap: '32px', alignItems: 'flex-start' }}>
+      <div className="products-layout">
         {/* Sidebar Filters */}
         <div style={{ width: '250px', flexShrink: 0 }} className="desktop-only">
           <div className="card" style={{ padding: '24px' }}>

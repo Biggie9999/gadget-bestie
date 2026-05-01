@@ -141,7 +141,7 @@ const Checkout = () => {
             <div style={{ border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: '24px', marginBottom: '32px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px' }}>
                 <span style={{ color: 'var(--text-muted)' }}>Total Amount:</span>
-                <span style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--primary)' }}>${cartTotal.toFixed(2)}</span>
+                <span style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--primary)' }}>₦{cartTotal.toLocaleString()}</span>
               </div>
               
               <div style={{ height: '1px', backgroundColor: 'var(--border)', margin: '16px 0' }}></div>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ShoppingCart, Menu, X, Smartphone } from 'lucide-react';
+import { ShoppingCart, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <Smartphone size={28} color="var(--primary)" />
-          Gadget<span>Bestie</span>
+          <img src={logo} alt="Gadget Bestie" style={{ height: '48px', width: 'auto' }} />
         </Link>
 
         {/* Desktop Nav */}

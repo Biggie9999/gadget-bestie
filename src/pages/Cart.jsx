@@ -43,8 +43,10 @@ const Cart = () => {
                 
                 <div style={{ flex: 1 }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                    <h3 style={{ fontSize: '1.125rem' }}>{item.name}</h3>
-                    <span style={{ fontWeight: '700', fontSize: '1.125rem' }}>${(item.price * item.quantity).toFixed(2)}</span>
+                    <Link to={`/product/${item.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <h3 style={{ fontSize: '1.125rem' }}>{item.name}</h3>
+                    </Link>
+                    <span style={{ fontWeight: '700', fontSize: '1.125rem' }}>₦{(item.price * item.quantity).toLocaleString()}</span>
                   </div>
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', marginBottom: '16px' }}>{item.category}</p>
                   
@@ -85,7 +87,7 @@ const Cart = () => {
             
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px', color: 'var(--text-muted)' }}>
               <span>Subtotal</span>
-              <span>${cartTotal.toFixed(2)}</span>
+              <span>₦{cartTotal.toLocaleString()}</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px', color: 'var(--text-muted)' }}>
               <span>Shipping</span>
@@ -94,7 +96,7 @@ const Cart = () => {
             
             <div style={{ borderTop: '1px solid var(--border)', margin: '24px 0', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span style={{ fontSize: '1.125rem', fontWeight: '600' }}>Total</span>
-              <span style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--primary)' }}>${cartTotal.toFixed(2)}</span>
+              <span style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--primary)' }}>₦{cartTotal.toLocaleString()}</span>
             </div>
             
             <Link to="/checkout" className="btn btn-primary" style={{ width: '100%', padding: '16px' }}>

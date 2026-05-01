@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import ProductDetails from './pages/ProductDetails';
 import { CartProvider } from './context/CartContext';
 
 const ScrollToTop = () => {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
           </Routes>
         </main>
         <Footer />

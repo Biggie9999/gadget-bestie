@@ -293,6 +293,20 @@ main {
   font-size: 1.5rem;
 }
 
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+.products-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -302,5 +316,14 @@ main {
   }
   .cart-icon {
     margin-right: 16px;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+  .products-layout {
+    flex-direction: column;
   }
 }

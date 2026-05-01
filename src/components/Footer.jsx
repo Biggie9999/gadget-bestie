@@ -1,6 +1,7 @@
 import React from 'react';
 import { Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -8,9 +9,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div>
-            <Link to="/" className="logo" style={{ color: 'white', marginBottom: '16px', display: 'flex' }}>
-              <Smartphone size={28} color="var(--accent)" />
-              Gadget<span style={{ color: 'var(--accent)' }}>Bestie</span>
+            <Link to="/" className="logo" style={{ marginBottom: '16px', display: 'inline-block' }}>
+              <img src={logo} alt="Gadget Bestie" style={{ height: '48px', width: 'auto' }} />
             </Link>
             <p style={{ marginTop: '16px' }}>Your premium plug for the best gadget accessories. We deliver nationwide.</p>
             <div style={{ display: 'flex', gap: '16px', marginTop: '24px' }}>
